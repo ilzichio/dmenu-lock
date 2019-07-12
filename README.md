@@ -1,5 +1,5 @@
 # dmenu-lock
-Very small lockscreen for i3 written in shellscript with the use of dmenu
+Very small lockscreen for i3 written in shellscript with the use of dmenu. Runs a dmenu in a loop asking your current password, doesn't let intruder input anything unless the right password is entered.
 
 ---   
 
