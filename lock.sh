@@ -14,7 +14,8 @@ unlock_action()
 
 checkpass()
 {
-        if [ "$(echo "$1" | sha256sum | awk '{print $1;}')" == "$(cat $hash_file)" ]
+        gethash "$1"
+        if [ "$hash" == "$(cat $hash_file)" ]
         then
                 echo true
         fi
@@ -34,7 +35,12 @@ ask()
 newpass()
 {
         echo -n "Enter new password: "; read np; \
-                        echo "$np" | sha256sum | awk '{print $1;}' > $hash_file
+                        gethash "$np" ; echo "$hash" > $hash_file
+}
+
+gethash()
+{
+        hash=$(echo "$1" | sha256sum | awk '{print $1;}')
 }
 
 addpass()
