@@ -1,7 +1,7 @@
 # dmenu-lock
 Very small lockscreen for i3 written in shellscript with the use of dmenu. Runs a dmenu in a loop asking your current password, doesn't let intruder input anything unless the right password is entered.  
 
-***THIS PROGRAM IS NOT A SECURE SOLUTION, IT BARELY ENOUGH TO PROTECT YOUR COMPUTER FROM YOUR MOTHER ENTERING YOUR NEET BASEMENT. YOU HAVE BEEN WARNED!***
+***THIS PROGRAM IS NOT A SECURE SOLUTION, IT IS BARELY ENOUGH TO PROTECT YOUR COMPUTER FROM YOUR MOTHER ENTERING YOUR NEET BASEMENT. YOU HAVE BEEN WARNED!***
 
 ---   
 
